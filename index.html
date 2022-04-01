@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Portifólio Web de Bruno Tomaz</title>
-</head>
-<body>
-<h1>Bruno Diniz Tomaz</h1>
-<ul>
-<li><a href=#eu>Quem sou?</a></li>
-<li><a href=#habilidades>Habilidades</a></li>
-<li><a href="#hobbie">Meus hobbies</a></li>    
-</ul>
-<img src="/images/Bruno Tomaz.jpg" alt="Foto de Bruno Tomaz" width="200">
-<br>
-<h4 id="eu">Quem Sou?</h4>
+<!-- Fonte dos títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 
-<p>Sou <em>brasileiro</em>, casado, com uma filha de 1 ano e 9 meses, tenho <strong>37 anos</strong>.
+    <style>
+
+        body {
+            background-color:rgb(29, 29, 29);
+        }
+        
+        .titles {
+            text-align: center;
+            color: rgb(0, 255, 34);
+            font-family: 'Quicksand', sans-serif
+        }
+        
+        .picture {
+            border-radius: 10%;
+        }
+        
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+        p, ul {
+            color: #c4d1fc;
+        }
+        
+        .button {
+            color: rgb(29, 29, 60);
+            background-color: rgba(255, 255, 0, 0.795);
+            padding: 10px;
+            line-height: 20px;
+            font-weight: 600;
+            border-radius: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        
+        ul li {
+            line-height: 25px;
+        }
+        
+        .iam {
+            font-weight: 600;
+            color: rgb(124, 182, 248);
+        }
+
+        </style>
+        
+</head>
+
+<body>
+
+<!-- Meu nome -->
+<h1 class="titles iam">BRUNO DINIZ TOMAZ</h1>
+
+<!-- "Índice" -->
+<a href=#eu class="titles button">Quem sou?</a>
 <br>
-Sou natural de Santo André/SP e nos últimos 8 anos moro em <strong>Barretos/SP</strong>.
+<a href=#habilidades class="titles button">Minhas Habilidades</a>
+<br>
+<a href="#hobbie" class="titles button">Meus hobbies</a>
+<br>
+
+<!-- Foto de Perfil -->
+<img class="center picture" src="/images/Bruno Tomaz.jpg" alt="Foto de Bruno Tomaz" width="300">
+
+<br>
+
+<!-- Sobre mim -->
+<h2 id="eu" class="titles">Quem Sou?</h2>
+
+<p>Sou <span class="iam">brasileiro</span>, casado, com uma filha de 1 ano e 9 meses, tenho 37 anos.
+<br>
+Sou natural de Santo André/SP e nos últimos 8 anos moro em <span class="iam">Barretos/SP</span>.
 <br><br>
 Sou uma pessoa bem calma e branda, mas ativo, dinâmico e que aprende rápido, principalmente quando é relacionado à tecnologia.
 <br>
@@ -25,18 +92,23 @@ Tenho sido autodidata, mas no momento <em>me dedico a aprender com a Tribe</em> 
 <br>
 Tenho perfil de liderança e personalidade conciliadora.</p>
 
-<h4 id="habilidades">Habilidades</h4>
+<!-- Habilidades -->
+<h2 id="habilidades" class="titles">Habilidades</h2>
 
-<ul>Algumas das habilidades que possuo:
+<p>Algumas das habilidades que possuo:</p>
+
+<ul>
 <li>Dinâmico;</li>
 <li>Autodidata;</li>
 <li>Eletricista;</li>
 <li>Orador Público;</li>
 <li>Organizador;</li>
 <li>Conciliador;</li>
-<li><strong>Futuro programador.</strong></li></ul>
+<li class="iam"><strong>Futuro programador.</strong></li>
+</ul>
 
-<h4 id="hobbie">Hobbies</h4>
+<!-- Hobbies -->
+<h2 id="hobbie" class="titles">Hobbies</h2>
 
 <p>Tenho como hobbie jogar videogame, assistir séries e filmes e passar tempo com a família.
 <br>
@@ -44,5 +116,7 @@ Gosto de ler e atualmente estou lendo uma revista on-line que fala sobre um mund
 <br>
 Também gosto muito de ver os vídeos e o blog do <a href="https://diolinux.com.br/" target="blank">Diolinux</a>, pois gosto e uso o linux desde 2006. Embora apenas recentemente como SO principal.
 </p>
+
 </body>
+
 </html>
