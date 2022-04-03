@@ -1,0 +1,44 @@
+body {
+    background-color:rgb(29, 29, 29);
+}
+
+.titles {
+    text-align: center;
+    color: rgb(0, 255, 34);
+    font-family: 'Quicksand', sans-serif
+}
+
+.picture {
+    border-radius: 10%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p, ul {
+    color: #c4d1fc;
+}
+
+.button {
+    color: rgb(29, 29, 60);
+    background-color: rgba(255, 255, 0, 0.795);
+    padding: 10px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    width:30%;
+    display: inline-block;
+    margin: 5px;
+}
+
+ul li {
+    line-height: 25px;
+}
+
+.iam {
+    font-weight: 600;
+    color: rgb(124, 182, 248);
+}
