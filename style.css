@@ -1,5 +1,6 @@
 body {
     background-color:rgb(29, 29, 29);
+    padding: 10px;
 }
 
 .titles {
@@ -10,13 +11,10 @@ body {
 
 .picture {
     border-radius: 10%;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    float: left;
+    padding: 10px;
+    background-color: darkgray;
+    }
 
 p, ul {
     color: #c4d1fc;
@@ -41,4 +39,14 @@ ul li {
 .iam {
     font-weight: 600;
     color: rgb(124, 182, 248);
+}
+
+.description {
+    border: 10px solid rgb(29, 29, 29);
+    height: 418px;
+    overflow: auto; 
+}
+
+ul li:nth-child(odd) {
+    background-color: rgb(61, 61, 61);
 }
