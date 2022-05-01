@@ -6,7 +6,7 @@ body {
 .titles {
     text-align: center;
     color: rgb(0, 255, 34);
-    font-family: 'Quicksand', sans-serif
+    font-family: 'Quicksand', sans-serif;
 }
 
 .picture {
@@ -41,6 +41,10 @@ ul li {
     color: rgb(124, 182, 248);
 }
 
+h1.iam {
+    font-size: 3.5em;
+}
+
 .description {
     border: 10px solid rgb(29, 29, 29);
     height: 418px;
@@ -49,4 +53,8 @@ ul li {
 
 ul li:nth-child(odd) {
     background-color: rgb(61, 61, 61);
+}
+
+#eu, #hobbie, #habilidades {
+    text-align: left;
 }
