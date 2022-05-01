@@ -47,12 +47,13 @@ h1.iam {
 }
 
 .description {
-    border: 5px solid rgb(252, 228, 187));
+    border: 5px solid rgb(252, 228, 187);
     height: 418px;
     overflow: auto;
     padding: 5px;
     border-radius: 20px;
     background-color: antiquewhite;
+    margin-right: 10px;
 }
 
 ul li:nth-child(odd) {
