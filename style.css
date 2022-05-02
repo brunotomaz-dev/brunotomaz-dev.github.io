@@ -49,10 +49,12 @@ h1.iam {
 .description {
     border: 5px solid rgb(252, 228, 187);
     overflow: auto;
+    min-height: 250px;
     padding: 5px;
     border-radius: 20px;
     background-color: antiquewhite;
     width: 60%;
+    text-align: center;
 }
 
 ul li:nth-child(odd) {
@@ -60,7 +62,7 @@ ul li:nth-child(odd) {
     color: black;
 }
 
-#eu, #hobbie, #habilidades {
+#hobbie, #habilidades {
     text-align: left;
 }
 
@@ -68,8 +70,12 @@ ul li:nth-child(odd) {
     width: 98%;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid rgb(4, 161, 25);
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+h3 a {
+    color:rgb(4, 161, 25);
+    text-shadow: 2px 1.3px darkgrey;
 }
