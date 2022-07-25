@@ -8,7 +8,7 @@ class Projetos extends React.Component {
       <div>
         <Header />
         <h3><Link to="/project-todo-list/">Lessons Learned</Link></h3>
-        <h3><Link href="https://orbnumozat.github.io/project-pixels-art/">Pixels Art</Link></h3>
+        <h3><a href="https://orbnumozat.github.io/project-pixels-art/">Pixels Art</a></h3>
         <h3><Link to="/project-todo-list/">Todo List</Link></h3>
       </div>
     );
