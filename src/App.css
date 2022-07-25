@@ -1,0 +1,105 @@
+body {
+  background-color: rgb(122, 122, 122);
+}
+
+.App {
+  text-align: center;
+}
+
+.perfil {
+  border-radius: 10%;
+  -webkit-box-reflect: below 5px
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  height: 40vmin;
+  transition: all 0.5s ease;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.linkHover:hover {
+  color: #a7a7a7;
+  transform: scale(1.1);
+}
+
+.presentation {
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.myArticle {
+  background-color: #838282;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  width: 50%;
+}
+
+p {
+  line-height: 1.3;
+}
+
+.myHabilities {
+  padding: 10px;
+}
+
+.hability-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  line-height: 0.1;
+  min-height: 25vh;
+}
+
+.navLink {
+  border-right: 1px solid black;
+  color: #858ed8;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 20px;
+  text-align: left;
+  text-decoration: unset;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.hello {
+  align-self: center;
+  padding: 10px;
+  width: 80%;
+}
+
+@media ( prefers-reduced-motion : no-preference ) {
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
