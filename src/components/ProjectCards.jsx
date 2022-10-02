@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import dataFundamentos from '../data/fundamentos';
 import { fundamentosAction } from '../redux/actions/actions';
-import Card from './Card';
+import CardFundamentos from './CardFundamentos';
 
 class ProjectCards extends React.Component {
   componentDidMount() {
@@ -18,11 +18,10 @@ class ProjectCards extends React.Component {
   render() {
     return (
       <>
+        <h1>Fundamentos de Desenvolvimento Web</h1>
         <section className="card">
-          <Card className="project-card link-hover" />
+          <CardFundamentos />
         </section>
-        <h3><a href="https://brunotomaz-dev.github.io/project-pixels-art/" target="_blank" rel="noreferrer">Pixels Art</a></h3>
-        <h3><a href="https://brunotomaz-dev.github.io/project-todo-list/" target="_blank" rel="noreferrer">Todo List</a></h3>
       </>
     );
   }
