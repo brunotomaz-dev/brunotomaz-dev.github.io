@@ -37,7 +37,8 @@ class Home extends React.Component {
               é relacionado a tecnologia.
               {' '}
               <br />
-              Sou um Desenvolvedor FullStack e no momento me dedico a aprender mais com a Trybe.
+              Sou um Desenvolvedor FullStack e no momento me dedico a aprender mais
+              com a Trybe.
             </p>
             <div className="myHabilities">
               <h3>Habilidades</h3>
