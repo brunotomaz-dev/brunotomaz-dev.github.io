@@ -98,6 +98,7 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .project-card {
@@ -111,7 +112,6 @@ a {
   padding: 7px;
   width: 30%;
 }
-
 
 @media ( prefers-reduced-motion : no-preference ) {
 
@@ -130,4 +130,3 @@ a {
     transform: rotate(360deg);
   }
 }
-
