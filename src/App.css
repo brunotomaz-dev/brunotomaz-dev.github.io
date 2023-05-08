@@ -28,18 +28,31 @@ body {
 }
 
 .presentation {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.9rem;
+  gap: 10px;
   justify-content: space-around;
-  margin-top: 10px;
+  margin: 10px auto;
+  width: 90%;
 }
 
 .myArticle {
   background-color: #838282;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: fit-content;
   padding: 10px;
   width: 50%;
+}
+
+.stacksArticle {
+  background-color: #838282;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  padding: 10px;
 }
 
 p {
@@ -55,6 +68,13 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
+}
+
+.stacks {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .project-list, .hability-list {
@@ -129,4 +149,9 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+.imageList {
+  border-radius: 10px;
+  width: 100px;
 }
