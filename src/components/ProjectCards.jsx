@@ -4,8 +4,7 @@ import { connect } from 'react-redux';
 import dataFrontEnd from '../data/frontEnd';
 import dataFundamentos from '../data/fundamentos';
 import { frontEndAction, fundamentosAction } from '../redux/actions/actions';
-import CardFrontEnd from './CardFrontEnd';
-import CardFundamentos from './CardFundamentos';
+import Card from './Card';
 
 class ProjectCards extends React.Component {
   componentDidMount() {
@@ -19,15 +18,16 @@ class ProjectCards extends React.Component {
   };
 
   render() {
+    const { fundamentos, frontEnd } = this.props;
     return (
       <div className="projects">
         <h1>Fundamentos de Desenvolvimento Web</h1>
         <section className="card">
-          <CardFundamentos />
+          <Card bloco={ fundamentos } />
         </section>
         <h1>Front-End</h1>
         <section className="card">
-          <CardFrontEnd />
+          <Card bloco={ frontEnd } />
         </section>
       </div>
     );
@@ -39,9 +39,16 @@ const mapDispatchToProps = (dispatch) => ({
   dispatchFrontEnd: (project) => (dispatch(frontEndAction(project))),
 });
 
+const mapStateToProps = (store) => ({
+  fundamentos: store.projectReducer.fundamentos,
+  frontEnd: store.projectReducer.frontEnd,
+});
+
 ProjectCards.propTypes = {
   dispatchFundamentos: PropTypes.func.isRequired,
   dispatchFrontEnd: PropTypes.func.isRequired,
+  fundamentos: PropTypes.arrayOf(Object).isRequired,
+  frontEnd: PropTypes.arrayOf(Object).isRequired,
 };
 
-export default connect(null, mapDispatchToProps)(ProjectCards);
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectCards);

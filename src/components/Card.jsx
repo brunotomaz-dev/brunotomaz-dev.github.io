@@ -1,19 +1,18 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { connect } from 'react-redux';
 
-class CardFrontEnd extends React.Component {
+class Card extends React.Component {
   render() {
-    const { frontEnd } = this.props;
+    const { bloco } = this.props;
     return (
       <>
-        {frontEnd.map((project) => {
+        {bloco.map((project) => {
           const { nome, page, github, tecnologias, detalhes } = project;
           return (
             <div key={ nome } className="project-card link-hover">
               <h3>{nome}</h3>
               <ul className="project-list">
-                <i>Tecnologias Usadas:</i>
+                <i>Principais Tecnologias:</i>
                 {tecnologias.map((tech) => <li className="tech" key={ tech }>{tech}</li>)}
               </ul>
               <p>{detalhes}</p>
@@ -37,12 +36,8 @@ class CardFrontEnd extends React.Component {
   }
 }
 
-const mapStateToProps = (store) => ({
-  frontEnd: store.projectReducer.frontEnd,
-});
-
-CardFrontEnd.propTypes = {
-  frontEnd: PropTypes.arrayOf(Object).isRequired,
+Card.propTypes = {
+  bloco: PropTypes.arrayOf(Object).isRequired,
 };
 
-export default connect(mapStateToProps)(CardFrontEnd);
+export default Card;
