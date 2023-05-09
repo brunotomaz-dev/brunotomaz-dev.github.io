@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import perfil from '../images/perfil.jpg';
+import imageStacks from '../data/stacksImages';
 
 class Home extends React.Component {
   myHabilities = () => {
@@ -10,11 +10,42 @@ class Home extends React.Component {
       'Conciliador',
       'Paciente',
       'Observador',
+      'Liderança',
       'Orador Público',
-      'Futuro Programador',
     ];
     return arrayHabilities.map((habil) => (
       <li classList="arrayList" key={ habil }>{habil}</li>));
+  };
+
+  myStacks = () => {
+    const arrayStacks = [
+      'Git',
+      'Docker',
+      'Eslint',
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Typescript',
+      'React',
+      'NodeJS',
+      'ExpressJS',
+      'MySQL',
+      'Sequelize',
+      'MongoDB',
+      'Mongoose',
+    ];
+    return arrayStacks.map((stack) => (
+      <div key={ stack } className="stackCard">
+        <img
+          className="imageList"
+          src={ imageStacks[stack] }
+          key={ stack }
+          alt={ stack }
+        />
+        {' '}
+        {stack}
+      </div>
+    ));
   };
 
   render() {
@@ -22,11 +53,10 @@ class Home extends React.Component {
       <div>
         <Header />
         <section className="presentation">
-          <img className="perfil scale" src={ perfil } alt="Foto de Bruno" />
           <article className="myArticle">
             <h3>Quem sou?</h3>
             <p>
-              Tenho 37 anos, sou brasileiro, casado e pai da pequena Chloe.
+              Tenho 38 anos, sou brasileiro, casado e pai da pequena Chloe.
               {' '}
               <br />
               Sou natural de Santo André/SP e nos últimos 8 anos
@@ -41,11 +71,18 @@ class Home extends React.Component {
               com a Trybe.
             </p>
             <div className="myHabilities">
-              <h3>Habilidades</h3>
+              <h3>Características</h3>
               <ul className="hability-list">
                 {this.myHabilities()}
               </ul>
             </div>
+          </article>
+          <article className="stacksArticle">
+            <h3>Principais Stacks / Ferramentas</h3>
+            <section className="stacks">
+              {this.myStacks()}
+            </section>
+
           </article>
         </section>
       </div>

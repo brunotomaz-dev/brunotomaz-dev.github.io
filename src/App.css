@@ -8,10 +8,16 @@ body {
 
 .perfil {
   border-radius: 10%;
-  -webkit-box-reflect: below 5px
-    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
-  height: 40vmin;
+
+  /* -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4)); */
+  height: 25vmin;
+  padding: 7px;
   transition: all 0.5s ease;
+}
+
+.perfil:hover {
+  transform: scale(1.1);
 }
 
 .scale:hover {
@@ -28,18 +34,39 @@ body {
 }
 
 .presentation {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   font-size: 0.9rem;
+  gap: 10px;
   justify-content: space-around;
-  margin-top: 10px;
+  margin: 10px auto;
+  margin-top: 28vmin;
+  width: 95%;
+}
+
+.projects {
+  margin-top: 28vmin;
 }
 
 .myArticle {
-  background-color: #838282;
+  background-color: #afafaf;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  max-width: 700px;
   padding: 10px;
-  width: 50%;
+  z-index: 1;
+}
+
+.stacksArticle {
+  background-color: #afafaf;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  max-width: 1050px;
+  padding: 10px;
+  z-index: 1;
 }
 
 p {
@@ -53,8 +80,23 @@ p {
 .hability-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 25px;
+  justify-content: space-evenly;
   padding: 0;
+}
+
+.stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.stackCard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .project-list, .hability-list {
@@ -70,16 +112,21 @@ p {
   justify-content: flex-start;
   line-height: 0.1;
   min-height: 25vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .navLink {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.664);
   color: #858ed8;
   font-size: 0.8rem;
   line-height: 1;
   padding: 20px;
   text-align: left;
   text-decoration: unset;
+  width: 21vmin;
 }
 
 a {
@@ -98,6 +145,7 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .project-card {
@@ -110,8 +158,8 @@ a {
   justify-content: space-around;
   padding: 7px;
   width: 30%;
+  z-index: 1;
 }
-
 
 @media ( prefers-reduced-motion : no-preference ) {
 
@@ -131,3 +179,11 @@ a {
   }
 }
 
+.imageList {
+  border-radius: 10px;
+  width: 100px;
+}
+
+.tech {
+  text-shadow: #282c34 1px 1px 1px;
+}
