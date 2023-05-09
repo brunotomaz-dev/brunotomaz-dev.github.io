@@ -14,7 +14,7 @@ class Home extends React.Component {
       'Orador Público',
     ];
     return arrayHabilities.map((habil) => (
-      <li classList="arrayList" key={ habil }>{habil}</li>));
+      <li className="arrayList" key={ habil }>{habil}</li>));
   };
 
   myStacks = () => {
@@ -57,18 +57,14 @@ class Home extends React.Component {
             <h3>Quem sou?</h3>
             <p>
               Tenho 38 anos, sou brasileiro, casado e pai da pequena Chloe.
-              {' '}
               <br />
-              Sou natural de Santo André/SP e nos últimos 8 anos
-              estou morando em Barretos/SP.
-              {' '}
+              Sou natural de Santo André/SP e atualmente moro em Barretos/SP.
               <br />
-              Sou dinâmico e aprendo rápido, principalmente o que
-              é relacionado a tecnologia.
-              {' '}
+              Sou dinâmico e aprendo rápido, apaixonado por tecnologia desde pequeno
+              e agora estou em busca de uma oportunidade de trabalho.
               <br />
-              Sou um Desenvolvedor FullStack e no momento me dedico a aprender mais
-              com a Trybe.
+              Sou um Desenvolvedor FullStack e possuo mas de 20 projetos feitos em
+              grupo e individuais, tanto em Front-End quanto em Back-End.
             </p>
             <div className="myHabilities">
               <h3>Características</h3>
