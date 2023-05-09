@@ -20,7 +20,7 @@ class ProjectCards extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="projects">
         <h1>Fundamentos de Desenvolvimento Web</h1>
         <section className="card">
           <CardFundamentos />
@@ -29,7 +29,7 @@ class ProjectCards extends React.Component {
         <section className="card">
           <CardFrontEnd />
         </section>
-      </>
+      </div>
     );
   }
 }

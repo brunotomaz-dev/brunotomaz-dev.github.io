@@ -12,7 +12,7 @@ class Header extends React.Component {
             <p>Olá, me chamo</p>
             <h1>Bruno Diniz Tomaz</h1>
           </section>
-          <img className="perfil scale" src={ perfil } alt="Foto de Bruno" />
+          <img className="perfil" src={ perfil } alt="Foto de Bruno" />
         </header>
       </div>
     );

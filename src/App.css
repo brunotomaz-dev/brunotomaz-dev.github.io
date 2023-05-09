@@ -8,11 +8,16 @@ body {
 
 .perfil {
   border-radius: 10%;
-  -webkit-box-reflect: below 5px
-    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+
+  /* -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4)); */
   height: 25vmin;
   padding: 7px;
   transition: all 0.5s ease;
+}
+
+.perfil:hover {
+  transform: scale(1.1);
 }
 
 .scale:hover {
@@ -36,7 +41,12 @@ body {
   gap: 10px;
   justify-content: space-around;
   margin: 10px auto;
+  margin-top: 28vmin;
   width: 95%;
+}
+
+.projects {
+  margin-top: 28vmin;
 }
 
 .myArticle {
@@ -102,6 +112,10 @@ p {
   justify-content: flex-start;
   line-height: 0.1;
   min-height: 25vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .navLink {
@@ -112,7 +126,7 @@ p {
   padding: 20px;
   text-align: left;
   text-decoration: unset;
-  width: 20vmin;
+  width: 21vmin;
 }
 
 a {
@@ -168,4 +182,8 @@ a {
 .imageList {
   border-radius: 10px;
   width: 100px;
+}
+
+.tech {
+  text-shadow: #282c34 1px 1px 1px;
 }

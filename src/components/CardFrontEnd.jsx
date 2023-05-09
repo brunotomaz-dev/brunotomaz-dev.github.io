@@ -14,7 +14,7 @@ class CardFrontEnd extends React.Component {
               <h3>{nome}</h3>
               <ul className="project-list">
                 <i>Tecnologias Usadas:</i>
-                {tecnologias.map((tech) => (<li key={ tech }>{tech}</li>))}
+                {tecnologias.map((tech) => <li className="tech" key={ tech }>{tech}</li>)}
               </ul>
               <p>{detalhes}</p>
               {page && (
