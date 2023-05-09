@@ -10,7 +10,8 @@ body {
   border-radius: 10%;
   -webkit-box-reflect: below 5px
     linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
-  height: 40vmin;
+  height: 25vmin;
+  padding: 7px;
   transition: all 0.5s ease;
 }
 
@@ -35,24 +36,27 @@ body {
   gap: 10px;
   justify-content: space-around;
   margin: 10px auto;
-  width: 90%;
+  width: 95%;
 }
 
 .myArticle {
-  background-color: #838282;
+  background-color: #afafaf;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: fit-content;
+  max-width: 700px;
   padding: 10px;
-  width: 50%;
+  z-index: 1;
 }
 
 .stacksArticle {
-  background-color: #838282;
+  background-color: #afafaf;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: fit-content;
+  max-width: 1050px;
   padding: 10px;
+  z-index: 1;
 }
 
 p {
@@ -66,15 +70,23 @@ p {
 .hability-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 25px;
+  justify-content: space-evenly;
   padding: 0;
 }
 
 .stacks {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px;
+}
+
+.stackCard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .project-list, .hability-list {
@@ -93,13 +105,14 @@ p {
 }
 
 .navLink {
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.664);
   color: #858ed8;
   font-size: 0.8rem;
   line-height: 1;
   padding: 20px;
   text-align: left;
   text-decoration: unset;
+  width: 20vmin;
 }
 
 a {
@@ -131,6 +144,7 @@ a {
   justify-content: space-around;
   padding: 7px;
   width: 30%;
+  z-index: 1;
 }
 
 @media ( prefers-reduced-motion : no-preference ) {

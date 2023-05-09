@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import imageStacks from '../data/stacksImages';
-import perfil from '../images/perfil.jpg';
 
 class Home extends React.Component {
   myHabilities = () => {
@@ -20,17 +19,33 @@ class Home extends React.Component {
 
   myStacks = () => {
     const arrayStacks = [
-      imageStacks.Javascript,
-      imageStacks.Typescript,
-      imageStacks.Git,
+      'Git',
+      'Docker',
+      'Eslint',
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Typescript',
+      'React',
+      'NodeJS',
+      'ExpressJS',
+      'MySQL',
+      'Sequelize',
+      'MongoDB',
+      'Mongoose',
     ];
     return arrayStacks.map((stack) => (
-      <img
-        className="imageList"
-        src={ stack }
-        key={ stack }
-        alt={ stack }
-      />));
+      <div key={ stack } className="stackCard">
+        <img
+          className="imageList"
+          src={ imageStacks[stack] }
+          key={ stack }
+          alt={ stack }
+        />
+        {' '}
+        {stack}
+      </div>
+    ));
   };
 
   render() {
@@ -38,7 +53,6 @@ class Home extends React.Component {
       <div>
         <Header />
         <section className="presentation">
-          <img className="perfil scale" src={ perfil } alt="Foto de Bruno" />
           <article className="myArticle">
             <h3>Quem sou?</h3>
             <p>
@@ -57,14 +71,14 @@ class Home extends React.Component {
               com a Trybe.
             </p>
             <div className="myHabilities">
-              <h3>Habilidades</h3>
+              <h3>Características</h3>
               <ul className="hability-list">
                 {this.myHabilities()}
               </ul>
             </div>
           </article>
           <article className="stacksArticle">
-            <h3>Principais Stacks</h3>
+            <h3>Principais Stacks / Ferramentas</h3>
             <section className="stacks">
               {this.myStacks()}
             </section>
