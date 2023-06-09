@@ -30,7 +30,7 @@ a {
 
   /* -webkit-box-reflect: below 1px
     linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4)); */
-  height: 25vmin;
+  height: 20vmin;
   padding: 7px;
   transition: all 0.5s ease;
 }
@@ -51,7 +51,7 @@ a {
   font-size: 4vmin;
   justify-content: flex-start;
   line-height: 0.1;
-  min-height: 25vh;
+  min-height: 20vh;
   position: fixed;
   top: 0;
   width: 100%;
@@ -63,7 +63,7 @@ a {
   color: #858ed8;
   font-size: 1.5vmin;
   line-height: 1;
-  padding: 20px;
+  padding: 15px;
   text-align: left;
   text-decoration: unset;
   width: 21vmin;
@@ -71,7 +71,7 @@ a {
 
 .hello {
   align-self: center;
-  padding: 10px;
+  padding: 7px;
   width: 80%;
 }
 
@@ -84,7 +84,7 @@ a {
   gap: 10px;
   justify-content: space-around;
   margin: 10px auto;
-  margin-top: 28vmin;
+  margin-top: 25vmin;
   width: 95%;
 }
 
@@ -146,7 +146,7 @@ a {
 
 /* Projetos */
 .projects {
-  margin-top: 28vmin;
+  margin-top: 25vmin;
 }
 
 .card {

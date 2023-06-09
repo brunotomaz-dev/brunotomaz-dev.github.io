@@ -16,18 +16,20 @@ class Card extends React.Component {
                 {tecnologias.map((tech) => <li className="tech" key={ tech }>{tech}</li>)}
               </ul>
               <p>{detalhes}</p>
-              {page && (
+              <div>
+                {page && (
+                  <h4>
+                    <a href={ page } target="_blank" rel="noreferrer">
+                      Página do Projeto
+                    </a>
+                  </h4>
+                )}
                 <h4>
-                  <a href={ page } target="_blank" rel="noreferrer">
-                    Página do Projeto
+                  <a href={ github } target="_blank" rel="noreferrer">
+                    GitHub do Projeto
                   </a>
                 </h4>
-              )}
-              <h4>
-                <a href={ github } target="_blank" rel="noreferrer">
-                  GitHub do Projeto
-                </a>
-              </h4>
+              </div>
             </div>
           );
         })}

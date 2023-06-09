@@ -23,7 +23,7 @@ const dataFrontEnd = [
     tecnologias: ['React', 'Redux'],
     detalhes: (
       `Neste projeto coloquei em prática o que aprendi sobre React e Redux, 
-      testes usando RTL, e Soft-Skills como comunicação, metodologias àgeis, 
+      testes usando RTL, e Soft-Skills como comunicação, metodologias ágeis, 
       trabalho em grupo`
     ),
   },
