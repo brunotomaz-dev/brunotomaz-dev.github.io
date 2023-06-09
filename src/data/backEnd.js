@@ -6,7 +6,7 @@ const dataBackEnd = [
     tecnologias: ['NodeJS', 'Express', 'MySQL', 'Sequelize', 'Docker', 'Typescript'],
     detalhes: (
       `Projeto desenvolvido com uma tabela com a classificação dos clubes
-    e informações/edições de partidas.Focado no back-end, foi construída uma API.
+    e informações/edições de partidas. Focado no back-end, foi construída uma API.
     Para edição de partidas é necessário login, protegido por um token JWT e
     criptografia com bcrypt.`
     ),
