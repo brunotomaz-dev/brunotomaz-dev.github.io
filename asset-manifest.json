@@ -1,9 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8cdc42cc.css",
-    "main.js": "/static/js/main.30b73d08.js",
+    "main.css": "/static/css/main.c8ce2110.css",
+    "main.js": "/static/js/main.4edfc849.js",
+    "static/media/Wallet.gif": "/static/media/Wallet.1ca0b26f82b8855eca32.gif",
+    "static/media/PixelsArt.gif": "/static/media/PixelsArt.e34f6e27d8a4e0c73359.gif",
+    "static/media/Solar.png": "/static/media/Solar.0f4d92c16a2da1b92099.png",
+    "static/media/Tryunfo.png": "/static/media/Tryunfo.e1d4433a601114d38cce.png",
     "static/media/perfil.jpg": "/static/media/perfil.2cd93a9e08dc070aab46.jpg",
+    "static/media/TFC.png": "/static/media/TFC.090b72872d60775c4bfb.png",
+    "static/media/AppDelivery.png": "/static/media/AppDelivery.20035f92b9049222b97e.png",
+    "static/media/Wallet.png": "/static/media/Wallet.7397598b0aef307bcc99.png",
+    "static/media/Todo.png": "/static/media/Todo.fb1af5a2f37db7360bd0.png",
     "static/media/jwt.png": "/static/media/jwt.2fa9cadadad418c8a3ad.png",
+    "static/media/Pixel.png": "/static/media/Pixel.2355657dd8429256870d.png",
     "static/media/mongo.svg": "/static/media/mongo.6835c61a518a732eb8318d43dfe8f700.svg",
     "static/media/mysql.svg": "/static/media/mysql.ebf5eeaef302d497971c5bbd898566e4.svg",
     "static/media/sequelize.svg": "/static/media/sequelize.c2ab469bee98d6271aa534ec8e502276.svg",
@@ -18,11 +27,11 @@
     "index.html": "/index.html",
     "static/media/eslint.svg": "/static/media/eslint.fa9d89802d89963d9000f20d523e8689.svg",
     "static/media/html.svg": "/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
-    "main.8cdc42cc.css.map": "/static/css/main.8cdc42cc.css.map",
-    "main.30b73d08.js.map": "/static/js/main.30b73d08.js.map"
+    "main.c8ce2110.css.map": "/static/css/main.c8ce2110.css.map",
+    "main.4edfc849.js.map": "/static/js/main.4edfc849.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cdc42cc.css",
-    "static/js/main.30b73d08.js"
+    "static/css/main.c8ce2110.css",
+    "static/js/main.4edfc849.js"
   ]
 }
