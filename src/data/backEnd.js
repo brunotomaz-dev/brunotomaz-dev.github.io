@@ -1,3 +1,5 @@
+import Images from './projectsImages';
+
 const dataBackEnd = [
   {
     nome: 'Projeto TFC - Trybe Futebol Clube',
@@ -9,6 +11,7 @@ const dataBackEnd = [
     e informações/edições de partidas. Focado no back-end, foi construída uma API.
     Para edição de partidas é necessário login, protegido por um token JWT e
     criptografia com bcrypt.`,
+    image: Images.TFC,
   },
   {
     nome: 'Projeto Delivery App',
@@ -16,11 +19,12 @@ const dataBackEnd = [
     github: 'https://github.com/brunotomaz-dev/project-delivery-app',
     tecnologias: ['NodeJS', 'Express', 'MySQL', 'Sequelize', 'React', 'Javascript'],
     detalhes:
-      `Projeto desenvolvido em grupo, tanto o front-end quanto o back-end.
+      `Projeto Full-stack, de um app de Delivery desenvolvido em grupo.
       Foi utilizado o banco de dados MySQL, com o ORM Sequelize.
       O back-end foi desenvolvido com NodeJS e Express. Para criar um token foi
       utilizado o JWT e para criptografar a senha foi utilizado o MD5.
       O front-end foi desenvolvido com React.`,
+    image: Images.AppDelivery,
   },
 ];
 

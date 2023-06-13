@@ -1,3 +1,6 @@
+import Gif from './projectsGifs';
+import Image from './projectsImages';
+
 const dataFundamentos = [
   {
     nome: 'Projeto Lessons Learned',
@@ -16,6 +19,8 @@ const dataFundamentos = [
     detalhes: (
       'Neste projeto pratiquei conhecimentos sobre Javascript e Manipulação do DOM'
     ),
+    gif: Gif.Pixel,
+    image: Image.Pixel,
   },
   {
     nome: 'Projeto Todo List',
@@ -25,6 +30,7 @@ const dataFundamentos = [
     detalhes: (
       'Lista de tarefas com uso de HTML, CSS, Javascript'
     ),
+    image: Image.Todo,
   },
 ];
 
